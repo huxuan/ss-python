@@ -1,10 +1,10 @@
 {
   "recommendations": [
-    "PascalReitermann93.vscode-yaml-sort",
+    "DavidAnson.vscode-markdownlint",
     "charliermarsh.ruff",
-    "esbenp.prettier-vscode",
     "ms-python.black-formatter",
     "ms-python.python",
+    "redhat.vscode-yaml",
     "richie5um2.vscode-sort-json",
     "streetsidesoftware.code-spell-checker",
     "trond-snekvik.simple-rst"

@@ -1,6 +1,5 @@
 # Requirements for docs.
-autodoc-pydantic
-furo
-Sphinx
-sphinx-autobuild
-sphinx-click
+mkdocs-click
+mkdocs-git-revision-date-localized-plugin
+mkdocs-material
+mkdocstrings-python

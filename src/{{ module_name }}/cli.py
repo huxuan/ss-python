@@ -4,6 +4,11 @@ import typer
 app = typer.Typer()
 
 
+@app.callback()
+def callback() -> None:
+    """CLI for Serious Scaffold Python."""
+
+
 @app.command()
 def run() -> None:
     """Run command."""

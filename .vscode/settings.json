@@ -3,7 +3,7 @@
     "editor.defaultFormatter": "vscode.json-language-features"
   },
   "[markdown]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "DavidAnson.vscode-markdownlint"
   },
   "[python]": {
     "editor.codeActionsOnSave": {
@@ -12,21 +12,31 @@
     "editor.defaultFormatter": "ms-python.black-formatter"
   },
   "[yaml]": {
-    "editor.defaultFormatter": "PascalReitermann93.vscode-yaml-sort"
+    "editor.defaultFormatter": "redhat.vscode-yaml"
   },
   "cSpell.words": [
     "autofix",
-    "automodule",
+    "autohide",
     "cobertura",
     "codecov",
+    "fontawesome",
     "huxuan",
+    "inlinehilite",
     "interruptible",
     "isort",
+    "linenums",
+    "materialx",
+    "mkdocs",
     "mypy",
     "pathjoin",
     "pipenv",
     "pydantic",
+    "pymdownx",
     "setuptools",
+    "smartsymbols",
+    "superfences",
+    "tasklist",
+    "twemoji",
     "typer"
   ],
   "editor.codeActionsOnSave": {
@@ -43,11 +53,11 @@
     "**/.pytest_cache": true,
     "**/.ruff_cache": true,
     "**/.venv": true,
-    "**/Pipfile*": true,
     "**/__pycache__": true,
     "**/_build": true,
     "**/coverage.xml": true,
-    "**/htmlcov": true
+    "**/htmlcov": true,
+    "**/Pipfile*": true
   },
   "files.insertFinalNewline": true,
   "files.trimFinalNewlines": true,
@@ -65,36 +75,13 @@
     "sortJSONValues": false,
     "sortJSONValuesReverse": false
   },
-  "vscode-yaml-sort.customSortKeywords_2": [
-    "_exclude",
-    "project_name",
-    "project_description",
-    "repo_namespace",
-    "author_name",
-    "author_email",
-    "repo_name",
-    "package_name",
-    "module_name",
-    "test_coverage_threshold",
-    "minimal_python_version",
-    "maximal_python_version",
-    "stages",
-    "default",
-    "lint",
-    "tests",
-    "package",
-    "pages",
-    "release",
-    "3.8",
-    "3.9",
-    "3.10",
-    "3.11"
+  "yaml.customTags": [
+    "!ENV scalar",
+    "!ENV sequence",
+    "tag:yaml.org,2002:python/name:materialx.emoji.to_svg",
+    "tag:yaml.org,2002:python/name:materialx.emoji.twemoji",
+    "tag:yaml.org,2002:python/name:pymdownx.superfences.fence_code_format"
   ],
-  "vscode-yaml-sort.noCompatMode": true,
-  "vscode-yaml-sort.sortOnSave": 2,
-  "vscode-yaml-sort.useArrayProcessor": false,
-  "vscode-yaml-sort.useBlockProcessor": false,
-  "vscode-yaml-sort.useCustomSortRecursively": true,
-  "vscode-yaml-sort.useHelmProcessor": false,
-  "vscode-yaml-sort.useLeadingDashes": false
+  "yaml.format.enable": true,
+  "yaml.keyOrdering": true
 }

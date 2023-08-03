@@ -3,7 +3,6 @@
 .DS_Store
 .copier-answers.yml
 Pipfile
-public
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

@@ -15,7 +15,7 @@ clean:
 		Pipfile* \
 		coverage.xml \
 		dist \
-		docs/_build
+		site
 	find . -name '*.egg-info' -print0 | xargs -0 rm -rf
 	find . -name '*.pyc' -print0 | xargs -0 rm -f
 	find . -name '*.swp' -print0 | xargs -0 rm -f
@@ -72,7 +72,7 @@ upload:
 	${PIPRUN} python -m twine upload dist/*
 
 docs:
-	${PIPRUN} python -m sphinx.cmd.build docs public
+	${PIPRUN} python -m mkdocs build
 
-docs-autobuild:
-	${PIPRUN} python -m sphinx_autobuild docs public
+serve:
+	${PIPRUN} python -m mkdocs serve

@@ -16,7 +16,7 @@ A development-focused Python project template with various integrations, configu
 
 <div align="center">
   <a href="https://github.com/serious-scaffold/serious-scaffold-python">
-    <img src="docs/_static/images/logo.png" height=300 alt="Serious Scaffold Python">
+    <img src="https://serious-scaffold.github.io/serious-scaffold-python/assets/logo.svg" height=300 alt="Serious Scaffold Python">
   </a>
 </div>
 
