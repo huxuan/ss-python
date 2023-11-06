@@ -98,6 +98,7 @@
     "_message_after_update",
     "project_name",
     "project_description",
+    "project_private",
     "development_status",
     "copyright_license",
     "copyright_year",

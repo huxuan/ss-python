@@ -14,7 +14,9 @@
 {{ pipeline_badge() }}
 {{ coverage_badge() }}
 {{ release_badge() }}
+[%- if project_private == "public" %]
 [![PyPI - Python Version](https://img.shields.io/pypi/pyversions/{{ package_name }})](https://pypi.org/project/{{ package_name }}/)
+[%- endif %]
 {{ license_badge() }}
 
 [![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit)](https://github.com/pre-commit/pre-commit)

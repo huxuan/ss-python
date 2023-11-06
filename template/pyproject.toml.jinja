@@ -12,6 +12,9 @@ authors = [
   {email = "{{ author_email }}", name = "{{ author_name }}"},
 ]
 classifiers = [
+[%- if project_private == "private" %]
+  "Private :: Do Not Upload",
+[%- endif %]
 [%- if development_status == "Alpha" %]
   "Development Status :: 3 - Alpha",
 [%- elif development_status == "Beta" %]

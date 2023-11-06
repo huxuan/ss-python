@@ -1,17 +1,21 @@
 [% macro coverage_badge() -%]
   [% if repo_host_type == 'github.com' -%]
+    [% if project_private == "public" -%]
 [![Coverage](https://img.shields.io/endpoint?url=https://{{ page_url() }}/_static/badges/coverage.json)](https://{{ page_url() }}/reports/coverage)
+    [%- endif %]
   [%- elif repo_host_type == 'gitlab.com' or repo_host_type == 'gitlab-self-managed' -%]
 [![coverage report](https://{{ repo_url() }}/badges/main/coverage.svg)](https://{{ repo_url() }}/-/commits/main)
   [%- endif %]
 [%- endmacro %]
 
 [% macro license_badge() -%]
-  [% if repo_host_type == 'github.com' -%]
+  [% if project_private == "public" -%]
+    [% if repo_host_type == 'github.com' -%]
 [![GitHub](https://img.shields.io/github/license/{{ repo_namespace }}/{{ repo_name }})]({{ license_url() }})
-  [%- elif repo_host_type == 'gitlab.com' or repo_host_type == 'gitlab-self-managed' -%]
+    [%- elif repo_host_type == 'gitlab.com' or repo_host_type == 'gitlab-self-managed' -%]
 [![GitLab](https://img.shields.io/gitlab/license/{{ repo_namespace }}/{{ repo_name }}?gitlab_url=https%3A%2F%2F{{ repo_host }})]({{ license_url() }})
-  [%- endif -%]
+    [%- endif %]
+  [%- endif %]
 [%- endmacro %]
 
 [% macro license_url() -%]
@@ -52,7 +56,9 @@
   [%- if repo_host_type == 'gitlab.com' or repo_host_type == 'gitlab-self-managed' -%]
 [![Latest Release](https://{{ repo_url() }}/-/badges/release.svg)](https://{{ repo_url() }}/-/releases)
   [%- endif -%]
+  [%- if project_private == "public" -%]
 [![PyPI](https://img.shields.io/pypi/v/{{ package_name }})](https://pypi.org/project/{{ package_name }}/)
+  [%- endif %]
 [%- endmacro %]
 
 [% macro repo_url() -%]

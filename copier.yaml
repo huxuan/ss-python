@@ -26,6 +26,13 @@ project_description:
   default: A Python project template covering the entire development lifecycle with various integrations, configurations and modules.
   help: 'Provide a brief description for the project:'
   type: str
+project_private:
+  default: public
+  choices:
+    - public
+    - private
+  help: 'Choose if the project is private to prevent accidental uploads to the public PyPI and to disable any features requiring public access:'
+  type: str
 development_status:
   default: Alpha
   choices:
