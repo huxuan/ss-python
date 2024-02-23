@@ -12,7 +12,7 @@ jobs:
         RENOVATE_REPOSITORIES: '["${{ github.repository }}"]'
         RENOVATE_REPOSITORY_CACHE: enabled
         RENOVATE_TOKEN: ${{ secrets.RENOVATE_TOKEN }}
-      image: ghcr.io/renovatebot/renovate:37.202.2
+      image: ghcr.io/renovatebot/renovate:37.202.2@sha256:6b5508487d42dcd36f95ff1139958f3b755bc8ff77b805b86eb1c59db943ef2f
       options: '--user root'
     runs-on: ubuntu-latest
     steps:
@@ -20,7 +20,7 @@ jobs:
       - id: generate-token
         name: Generate a token
         if: vars.BOT_APP_ID
-        uses: actions/create-github-app-token@v1
+        uses: actions/create-github-app-token@e8e39f73bb84fdf315a015fa3104f314c0a258b4 # v1
         with:
           app-id: ${{ vars.BOT_APP_ID }}
           private-key: ${{ secrets.BOT_PRIVATE_KEY }}
