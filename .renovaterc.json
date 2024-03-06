@@ -49,6 +49,16 @@
                 ]
             },
             "semanticCommitScope": "copier-template"
+        },
+        {
+            "groupName": "renovate docker tag",
+            "matchDatasources": [
+                "docker"
+            ],
+            "matchDepNames": [
+                "ghcr.io/renovatebot/renovate",
+                "renovate/renovate"
+            ]
         }
     ]
 }
