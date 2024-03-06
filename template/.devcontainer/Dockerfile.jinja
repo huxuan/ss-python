@@ -24,7 +24,7 @@ RUN pipx install pdm==2.12.4
 
 # Install pre-commit
 [%- if not version_higher_than(min_py, "3.9") %]
-RUN pipx install pre-commit==3.5.0
+RUN pipx install pre-commit==3.6.2
 [%- else %]
 RUN pipx install pre-commit==3.6.2
 [%- endif %]
