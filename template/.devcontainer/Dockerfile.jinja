@@ -13,7 +13,7 @@ ARG PYTHON_VERSION
 # renovate: depName=debian_12/pipx
 ARG PIPX_VERSION="1.0.0"
 # renovate: depName=debian_12/sudo
-ARG SUDO_VERSION="1.9.12"
+ARG SUDO_VERSION="1.9.13p3-1+deb12u1"
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
 #   pipx: To install Python applications.
