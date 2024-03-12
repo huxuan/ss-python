@@ -11,7 +11,7 @@ FROM python:${PYTHON_VERSION} as dev
 ARG PYTHON_VERSION
 
 # renovate: depName=debian_12/pipx
-ARG PIPX_VERSION="1.0.0"
+ARG PIPX_VERSION="1.1.0-1"
 # renovate: depName=debian_12/sudo
 ARG SUDO_VERSION="1.9.13p3-1+deb12u1"
 
