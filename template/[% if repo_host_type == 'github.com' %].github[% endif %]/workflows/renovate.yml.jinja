@@ -17,7 +17,7 @@ jobs:
         RENOVATE_REPOSITORIES: '["{{ '${{ github.repository }}' }}"]'
         RENOVATE_REPOSITORY_CACHE: enabled
         RENOVATE_TOKEN: {{ '${{ secrets.RENOVATE_TOKEN }}' }}
-      image: ghcr.io/renovatebot/renovate:37.246.0-full@sha256:2bbd0a3d5d92be7c56168b369dc4119840a9e341c3c09fdef9d1ac6735042c80
+      image: ghcr.io/renovatebot/renovate:37.246.1-full@sha256:e21e30f6f875d88e7d44732aa7cac5c4f0a4d0c4b71375d6e9e97042cac48dd0
       options: "--user root"
     runs-on: ubuntu-22.04
     steps:
