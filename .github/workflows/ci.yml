@@ -19,6 +19,10 @@ jobs:
         uses: actions/configure-pages@1f0c5cde4bc74cd7e1254d0cb4de8d49e9068c7d # v4.0.0
       - run: env | sort
       - run: make dev
+      - run: pdm info && pdm info --env
+        if: failure()
+      - run: cat /home/runner/.local/state/pdm/log/pdm-install-resolve*.log
+        if: failure()
       - run: make lint
       - run: make test
       - run: CI_PAGES_URL=${{ steps.pages.outputs.base_url }} make doc
